@@ -25,3 +25,14 @@
 * Ruby
 * Rails
 * Git
+
+
+//ジャンボトロン（jumbotron）は、WEBサイトのトップ見出しのデザイン
+ //*center jumbotron btn btn-lg btn-primaryなどもBootstrapによってスタイルが当てられます
+ //Bootstrap btn
+ 
+ //3つのCSSクラスが半角スペース区切り
+ //ページ内でクラスは何度でも使える、IDは一回限り
+ 
+ // Place all the styles related to the StaticPages controller here.
+ 
