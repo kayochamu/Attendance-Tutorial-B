@@ -1,23 +1,28 @@
-<% provide(:title, 'Sign up') %>
-<h1 class="headline">ユーザー登録</h1>
+<% provide(:title, 'Sign up') %>　<!-- フルタイトルではなく、たぶのタイトルを｜で分けている -->
+<h1 class="headline">ユーザー登録</h1>　<!-- ルールに従いクラスを指定し、CSSを返す -->
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_with(model: @user, local: true) do |f| %>
-       <%= render 'shared/error_messages' %>
-      <%= f.label :name, class: "label-signup" %>
-      <%= f.text_field :name, class: "form-control" %>
+<div class="row">  <!--container箱>row箱>col箱　面積の場所のこと  -->
+  <div class="col-md-6 col-md-offset-3">  <!-- グリッドシステム　カラムの合計は12まで -->
+  
+    <%= form_with(model: @user, local: true) do |f| %>   <!-- フォーマット、ユーザーモデルコントローラーにて@userのカラムを設定 　HTMLを返してくれる-->
+  
+       <%= render 'shared/error_messages' %>  <!-- エラーメッセージのパーシャル（繰り替えずべからず） -->
+       
+       
+      <%= f.label :name, class: "label-signup" %>  <!-- 名前のクラスを指定　ブーツストラップのため -->
+      <%= f.text_field :name, class: "form-control" %>  <!-- 名前の入力フォーマットのクラスを指定　ブーツストラップの為 -->
 
-      <%= f.label :email, class: "label-signup" %>
-      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :email, class: "label-signup" %>  <!-- emailのクラスを指定　ブーツストラップのため -->
+      <%= f.email_field :email, class: "form-control" %>  <!-- email入力フォーマットのクラスを指定　ブーツストラップの為 -->
 
-      <%= f.label :password, class: "label-signup" %>
-      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :password, class: "label-signup" %>  <!-- passwordのクラスを指定　ブーツストラップのため -->
+      <%= f.password_field :password, class: "form-control" %>  <!-- password入力フォーマットのクラスを指定　ブーツストラップの為 -->
 
-      <%= f.label :password_confirmation, class: "label-signup" %>
-      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <%= f.label :password_confirmation, class: "label-signup" %>  <!-- passwordハッシュ化のクラスを指定　ブーツストラップのため -->
+      <%= f.password_field :password_confirmation, class: "form-control" %>   <!-- passwordハッシュ化入力フォーマットのクラスを指定　ブーツストラップのため -->
 
-      <%= f.submit "新規作成", class: "btn btn-primary btn-block btn-signup" %>
+      <%= f.submit "新規作成", class: "btn btn-primary btn-block btn-signup" %>　<!-- 新規作成ボタンのクラスを指定　ブーツストラップの為 -->
     <% end %>
   </div>
 </div>
+
