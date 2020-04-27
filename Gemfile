@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',        '~> 5.1.6'
 gem 'bcrypt' #Userモデルにpassword_digestカラムを追加し、bcryptgemを追加したしたことでhas_secure_passwordが使用可能
 gem 'bootstrap-sass'
+gem 'rails-i18n'
 gem 'puma',         '~> 3.7'
 gem 'sass-rails',   '~> 5.0'
 gem 'uglifier',     '>= 1.3.0'
